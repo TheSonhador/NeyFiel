@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  background: lightgray;
+  text-align: center;
+  font-family: sans-serif;
+  color: #fefefe;
+  overflow-y: hidden;
+}
+.title{
+    margin-top: 120px;
+}
+.title h1{
+    color: #272626 !important;
+    text-shadow: rgb(77, 68, 68) 0 0.1em 0.1em;
+}
+.container {
+  position: relative;
+  width: 320px;
+  margin: 20px auto 0 auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotate360 60s infinite forwards linear;
+}
+.carousel__face {
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+span {
+  margin: auto;
+  font-size: 2rem;
+}
+
+.carousel__face:nth-child(1) {
+  background-image: url("https://tmssl.akamaized.net/images/foto/galerie/neymar-brazil-2022-1668947300-97010.jpg?lm=1668947335");
+  transform: rotateY(0deg) translateZ(430px);
+}
+.carousel__face:nth-child(2) {
+  background-image: url("https://conteudo.imguol.com.br/c/entretenimento/7c/2023/06/21/neymar-pede-perdao-a-bruna-biancardi-por-erros-apos-rumores-de-traicao-1687376122668_v2_900x506.jpg");
+  transform: rotateY(40deg) translateZ(430px);
+
+}
+.carousel__face:nth-child(3) {
+  background-image: url("https://www.ofuxico.com.br/wp-content/uploads/2022/11/neymar-jair-bolsonaro.jpg");
+  transform: rotateY(80deg) translateZ(430px);
+}
+.carousel__face:nth-child(4) {
+  background-image: url("https://pbs.twimg.com/media/EQYCkTlUUAEcHSz?format=jpg&name=small");
+  transform: rotateY(120deg) translateZ(430px);
+}
+.carousel__face:nth-child(5) {
+  background-image: url("https://s2.glbimg.com/ifq0IlBkv50aRqUo66iI6_eQ1TE=/top/s.glbimg.com/jo/eg/f/original/2013/09/12/neymar.jpg");
+  transform: rotateY(160deg) translateZ(430px);
+}
+.carousel__face:nth-child(6) {
+  background-image: url("https://p2.trrsf.com/image/fget/cf/1200/1600/middle/images.terra.com/2022/03/20/842389795-62378471c5998.jpeg");
+  transform: rotateY(200deg) translateZ(430px);
+}
+.carousel__face:nth-child(7) {
+  background-image: url("https://i.pinimg.com/736x/0e/30/56/0e305655c923d801f99da719e60e9a37.jpg");
+  transform: rotateY(240deg) translateZ(430px);
+}
+.carousel__face:nth-child(8) {
+  background-image: url("https://uploads.metropoles.com/wp-content/uploads/2020/04/25140405/Neymar29.jpg");
+  transform: rotateY(280deg) translateZ(430px);
+}
+.carousel__face:nth-child(9) {
+  background-image: url("https://www.lance.com.br/galerias/wp-content/uploads/2020/08/SantaCruz.jpg");
+  transform: rotateY(320deg) translateZ(430px);
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
